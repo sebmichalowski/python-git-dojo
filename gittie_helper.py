@@ -37,6 +37,5 @@ class GittieHelper():
     def get_value(self):
         """
         Method should calculate if exiting home is safe for gittie
-        :param day_number:
         """
         pass
