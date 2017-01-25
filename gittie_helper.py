@@ -1,10 +1,12 @@
 class GittieHelper():
 
     def __init__(self):
+
         """
         Initialize attributes with default value
         """
         self.temperature_degree = 0
+        self.humidity_value = 0
         self.air_pollution_level = 50
         self.day_number = 1
 
@@ -20,7 +22,7 @@ class GittieHelper():
         Method sets humidity level to attribute and validate input
         :param humidity_value:
         """
-        pass
+        self.humidity_value = humidity_value
 
     def set_air_pollution(self, air_pollution_level):
         """
