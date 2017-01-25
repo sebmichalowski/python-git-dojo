@@ -29,7 +29,8 @@ class GittieHelper():
         Method sets air pollution level to attribute and validate input
         :param air_pollution_level:
         """
-        self.air_pollution_level = air_pollution_level
+        if (int(air_pollution_level) > 0) and (int(air_pollution_level) < 121):
+            self.air_pollution_level = air_pollution_level
 
     def set_day_of_the_year(self, day_number):
         """
