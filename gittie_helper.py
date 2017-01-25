@@ -1,11 +1,11 @@
 class GittieHelper():
 
-    def __init__(self, air_pollution_level=50):
+    def __init__(self):
         """
         Initialize attributes with default value
         """
         self.temperature_degree = 0
-        self.air_pollution_level = air_pollution_level
+        self.air_pollution_level = 50
 
     def set_temperature(self, temperature_degree):
         """
