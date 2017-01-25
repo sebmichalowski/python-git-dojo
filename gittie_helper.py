@@ -18,8 +18,8 @@ class GittieHelper():
         try:
             temperature_degree = float(temperature_degree)
             self.temperature_degree = temperature_degree
-        except:
-            ValueError('Give us integer please')
+        except ValueError:
+            raise ValueError('Give us integer please')
 
     def set_humidity(self, humidity_value):
         """
@@ -53,3 +53,8 @@ class GittieHelper():
         Method should calculate if exiting home is safe for gittie
         """
         pass
+
+
+x = GittieHelper()
+
+x.set_temperature('dsads')
