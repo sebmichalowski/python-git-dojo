@@ -1,6 +1,6 @@
 class GittieHelper():
 
-    def __init__(self, air_pollution_level):
+    def __init__(self, air_pollution_level=50):
         """
         Initialize attributes with default value
         """
@@ -25,7 +25,7 @@ class GittieHelper():
         Method sets air pollution level to attribute and validate input
         :param air_pollution_level:
         """
-        pass
+        self.air_pollution_level = air_pollution_level
 
     def set_day_of_the_year(self, day_number):
         """
