@@ -52,9 +52,7 @@ class GittieHelper():
         """
         Method should calculate if exiting home is safe for gittie
         """
-        pass
-
-
-x = GittieHelper()
-
-x.set_temperature('dsads')
+        if self.air_pollution_level < 90:
+            if (self.temperature_degree < 50) and (self.temperature_degree > 50):
+                return True
+        return False
