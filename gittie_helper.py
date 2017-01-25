@@ -15,14 +15,22 @@ class GittieHelper():
         Method sets temperature to attribute and validate input
         :param temperature_degree:
         """
-        self.temperature_degree = temperature_degree
+        try:
+            temperature_degree = float(temperature_degree)
+            self.temperature_degree = temperature_degree
+        except:
+            ValueError('Give us integer please')
 
     def set_humidity(self, humidity_value):
         """
         Method sets humidity level to attribute and validate input
         :param humidity_value:
         """
-        self.humidity_value = humidity_value
+        try:
+            humidity_value = float(humidity_value)
+            self.humidity_value = humidity_value
+        except:
+            ValueError('Give us integer please')
 
     def set_air_pollution(self, air_pollution_level):
         """
