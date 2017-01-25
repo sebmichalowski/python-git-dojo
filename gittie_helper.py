@@ -27,8 +27,8 @@ class GittieHelper():
         :param humidity_value:
         """
         try:
-            humidity_value = float(humidity_value)
-            self.humidity_value = humidity_value
+            if float(humidity_value) > 0:
+                self.humidity_value = float(humidity_value)
         except:
             ValueError('Give us integer please')
 
