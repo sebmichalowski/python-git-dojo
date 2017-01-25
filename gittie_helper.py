@@ -29,8 +29,8 @@ class GittieHelper():
         try:
             if float(humidity_value) > 0:
                 self.humidity_value = float(humidity_value)
-        except:
-            ValueError('Give us integer please')
+        except ValueError:
+            raise ValueError('Give us integer please')
 
     def set_air_pollution(self, air_pollution_level):
         """
@@ -52,7 +52,14 @@ class GittieHelper():
         """
         Method should calculate if exiting home is safe for gittie
         """
-        pass
+        if self.temperature_degree < - 50 or self.temperature_degree > 50:
+            return False
+        elif self.humidity_value > 90:
+            return False
+        elif self.air_pollution_level > 100:
+            return False
+        else:
+            return True
 
 
 x = GittieHelper()
