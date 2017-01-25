@@ -6,6 +6,7 @@ class GittieHelper():
         """
         self.temperature_degree = 0
         self.air_pollution_level = 50
+        self.day_number = 1
 
     def set_temperature(self, temperature_degree):
         """
@@ -33,7 +34,8 @@ class GittieHelper():
         Method sets day number from beginning of the year to attribute and validate input
         :param day_number:
         """
-        pass
+        if (int(day_number) < 366) and (int(day_number) > 0):
+            self.day_number = int(day_number)
 
     def get_value(self):
         """
