@@ -16,7 +16,7 @@ class GittieHelper():
         :param temperature_degree:
         """
         try:
-            temperature_degree = int(temperature_degree)
+            temperature_degree = float(temperature_degree)
             self.temperature_degree = temperature_degree
         except:
             ValueError('Give us integer please')
@@ -27,7 +27,7 @@ class GittieHelper():
         :param humidity_value:
         """
         try:
-            humidity_value = int(humidity_value)
+            humidity_value = float(humidity_value)
             self.humidity_value = humidity_value
         except:
             ValueError('Give us integer please')
