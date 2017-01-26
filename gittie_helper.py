@@ -53,13 +53,10 @@ class GittieHelper():
         Method should calculate if exiting home is safe for gittie
         """
         if self.temperature_degree < - 50 or self.temperature_degree > 50:
-            return False
-        elif self.humidity_value > 90:
-            return False
-        elif self.air_pollution_level > 100:
-            return False
-        else:
-            return True
+            if self.humidity_value < 90:
+                if self.air_pollution_level < 100:
+                    return True
+        return False
 
 
 x = GittieHelper()
