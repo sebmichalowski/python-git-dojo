@@ -48,7 +48,7 @@ class GittieHelper():
         if (int(day_number) < 366) and (int(day_number) > 0):
             self.day_number = int(day_number)
 
-    def safety_calculator(self):
+    def outside_calculate(self):
         """
         Method should calculate if exiting home is safe for gittie
         """
