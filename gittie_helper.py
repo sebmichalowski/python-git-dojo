@@ -58,3 +58,10 @@ class GittieHelper():
                     return True
         return False
 
+    @staticmethod
+    def say(msg):
+        print('Gittie says: ', msg)
+
+    @staticmethod
+    def kill_fly():
+        print('Gittie killing fly ;]')
