@@ -58,3 +58,11 @@ class GittieHelper():
                     return True
         return False
 
+    @classmethod
+    def show_temperature(cls):
+        print('{}' .format(cls.temperature_degree))
+
+    @classmethod
+    def show_humidity(cls):
+        print('{}' .format(cls.humidity_value))
+
