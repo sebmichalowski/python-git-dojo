@@ -58,7 +58,3 @@ class GittieHelper():
                     return True
         return False
 
-
-x = GittieHelper()
-
-x.set_temperature('dsads')
